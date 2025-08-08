@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<head>
+    <title>H</title>
+    <link rel="icon" type="image/x-icon" href="assets/faviconHome.jpg">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+        html {
+            min-height:100%;
+            min-width:100%;
+            margin:0px;
+        }
+        body {
+            background-color:#24273a;
+            color:#cad3f5;
+            font-family:"Jetbrains mono", monospace;
+            min-height:100%;
+            min-width:100%;
+            margin:0px;
+            transition: all 0.5s;
+            .p {
+                margin-top:14px;
+                margin-bottom:14px;
+            }
+            .span {
+                
+            }
+        }
+        main {
+            position:absolute;
+            top:50%;
+            left:50%;
+            transform: translate(-100%, -100%);
+        }
+        .buttonBlock {
+            position:relative;
+            cursor:pointer;
+            transition:all 0.2s;
+            left:0px;
+            text-decoration:none;
+        }
+        .buttonBlock:hover{
+            margin-left:5px;
+        }
+        .colourButtons {
+            position:relative;
+            /*padding-top:1px;
+            padding-bottom:1px; */
+            padding-left:5px;
+            padding-right:5px;
+            border-radius:5px;
+            line-height:1.5em;
+            color:#363a4f;
+            font-size:15px;
+        }
+        .colourButtons:hover {
+            position:relative;
+            color:#24273a;
+        }
+        .colourButtons:active {
+            display:inline-block;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <p>hello james</p>
+        <p id="clock" style="margin-top:14px; margin-bottom:14px; text-align:center;"></p>
+        <p>
+            <a class="buttonBlock" href="https://www.youtube.com" target="_blank"><span class="colourButtons" style="background-color:#ed8796;">youtube</span></a>
+            <br><a class="buttonBlock" href="https://instagram.com" target="_blank"><span class="colourButtons" style="background-color:#c6a0f6;">insta</span></a>
+            <br><a class="buttonBlock" href="https://reddit.com" target="_blank"><span class="colourButtons" style="background-color:#f5bde6;">reddit</span></a>
+        </p>
+    </main>
+    <p id="eventNoti" style="margin:0px; text-align:right; right:5px;"></p>
+    <script src="clock.js"></script>
+</body>
