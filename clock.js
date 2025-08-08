@@ -28,7 +28,8 @@ function notification() {
   if ( specialEventPride == 5 ) {
     prideMessage = "Happy Pride";
   } else {
-    prideMessage = "no pride :(";
+    prideMessage = "";
   }
-  notiMessage.textContent = (prideMessage);
+  notiMessage.textContent = prideMessage;
 }
+setInterval(notification,0);
