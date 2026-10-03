@@ -4,72 +4,64 @@
     <link rel="icon" type="image/x-icon" href="assets/faviconHome.jpg">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
-        html {
-            min-height:100%;
-            min-width:100%;
-            margin:0px;
+        .catppuccinFrappe {
+            --background: #303446;
+            --text: #c6d0f5;
+            --hightlights: #ca9ee6;
+        }
+        .draculaMode {
+            --background: #282a36;
+            --text: #f8f8f2;
+            --highlights: #BD93F9;
         }
         body {
             background-color:#24273a;
             color:#cad3f5;
             font-family:"Jetbrains mono", monospace;
-            min-height:100%;
-            min-width:100%;
-            margin:0px;
+            height: 100vh;
+            margin: 0px;
+            display: grid;
+            place-items: center;
             transition: all 0.5s;
             .p {
-                margin-top:14px;
-                margin-bottom:14px;
+                margin: 14px 0;
             }
-            /*.span {
-                
-            }*/
+        }
+        main {
+            margin-bottom: 100px;
         }
         .dracula-mode {
             background-color:#282a36;
             color:#f8f8f2;
         }
-        main {
-            position:absolute;
-            top:50%;
-            left:50%;
-            transform: translate(-100%, -100%);
-        }
         .buttonBlock {
-            position:relative;
-            cursor:pointer;
-            transition:all 0.2s;
             left:0px;
-            text-decoration:none;
+            text-decoration: none;
+            transition: all 0.2s;
         }
         .buttonBlock:hover{
-            margin-left:5px;
+            padding-left:5px;
+        }
+        .buttonBlock:active {
+            padding-left: 10px;
         }
         .colourButtons {
-            position:relative;
-            /*padding-top:1px;
-            padding-bottom:1px; */
-            padding-left:5px;
-            padding-right:5px;
+            padding: 2px 5px;
             border-radius:5px;
-            line-height:1.5em;
+            line-height:1.7em;
             color:#363a4f;
             font-size:15px;
         }
         .colourButtons:hover {
-            position:relative;
             color:#24273a;
-        }
-        .colourButtons:active {
-            padding-left:px;
         }
     </style>
 </head>
 
 <body>
     <main>
-        <p>hello james</p>
-        <p id="clock" style="margin-top:14px; margin-bottom:14px; text-align:center;"></p>
+        <p style="margin-top:14px; margin-bottom:14px;">hello james</p>
+        <p id="clock" style="margin-top:14px; margin-bottom:18px; text-align:center;"></p>
         <p>
             <a class="buttonBlock" href="https://www.youtube.com" target="_blank"><span class="colourButtons" style="background-color:#ed8796;">youtube</span></a>
             <br><a class="buttonBlock" href="https://instagram.com" target="_blank"><span class="colourButtons" style="background-color:#c6a0f6;">insta</span></a>
